@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Network Request Counter",
+    "description": "Tracks and displays the number of successfully completed network requests for the current tab.",
+    "version": "1.0",
+    "permissions": [
+      "webRequest",
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Network Request Counter",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+  
